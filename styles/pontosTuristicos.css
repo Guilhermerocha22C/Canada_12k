@@ -1,0 +1,152 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #292828;
+}
+
+.navegacao {
+    background-color: #8b4513;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.menu .active {
+    border-bottom: 2px solid white;
+}
+
+.search-icon {
+    color: white;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.intro button {
+    background-color: #278DA4;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.intro button:hover {
+    background-color: #1f6f7f;
+}
+
+.destaques {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.grande {
+    max-width: 70%;  
+    height: 300px;   
+    margin: 0 auto;  
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.texto-card {
+    padding: 15px;
+}
+
+.texto-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.texto-card p {
+    font-size: 0.9em;
+    margin: 0;
+    line-height: 1.4;
+    color: #565656;
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .linha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .texto-card {
+        text-align: center;
+    }
+}

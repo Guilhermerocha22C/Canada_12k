@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F7F5F2;
+    color: #302f2f;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+}
+
+.navegacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.navegacao .menu a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    position: relative; 
+}
+
+.menu .home {
+    border-bottom: 1px solid white;
+    width: fit-content; 
+    display: inline-block; 
+}
+
+.navegacao .search-icon {
+    margin-left: auto;
+    color: white;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.texto-banner h1 {
+    font-family: 'DM Sans', cursive;
+    font-weight: 800;
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.texto-banner a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin-bottom: -40px;
+}
+
+.texto-banner a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.conteudo {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: start;
+    margin-left: 4rem;
+    font-weight: 800;
+}
+
+.destinos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destino {
+    width: 180px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.destino:hover {
+    transform: scale(1.05);
+}
+
+.destino img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.destino h3 {
+    font-family: 'DM Sans', sans-serif;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.destino p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    color: #666;
+}
+
